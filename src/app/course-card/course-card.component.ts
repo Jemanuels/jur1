@@ -22,6 +22,14 @@ export class CourseCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cardClasses(){
+
+    if(this.course.category == 'BEGINNER'){
+      return 'beginner';
+    }
+    
+  }
+
   onCourseViewed(){
     console.log('card component has been clicked!');
     this.courseSelected.emit(this.course);
