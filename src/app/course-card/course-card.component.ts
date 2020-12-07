@@ -39,4 +39,8 @@ export class CourseCardComponent implements OnInit {
     return this.course && this.course.iconUrl;
   }
 
+  cardStyles(){
+    return {'text-decoration': 'underline'};
+  }
+
 }
